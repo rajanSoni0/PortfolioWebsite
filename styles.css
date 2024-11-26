@@ -11,7 +11,7 @@
   width: 100%;
   height: 100vh;
   overflow-y: auto;
-  overflow-x: hidden;
+  overflow-x: auto;
   scroll-behavior: smooth;
 }
 
@@ -308,22 +308,22 @@ nav ul li a:hover {
 }
 
 #project1 {
-  background-image: url(./Images/projects/Project1.png);
+  background-image: url(Project1.png);
   right: 5%;
 }
 
 #project2 {
-  background-image: url(./Images/projects/Project2.png);
+  background-image: url(Project2.png);
   left: 5%;
 }
 
 #project3 {
-  background-image: url(./Images/projects/Project3.png);
+  background-image: url(Project3.png);
   right: 5%;
 }
 
 #project4 {
-  background-image: url(./Images/projects/Project4.png);
+  background-image: url(Project4.png);
   left: 5%;
 }
 
@@ -659,4 +659,20 @@ footer {
 .iconContainer{
   display: flex;
   gap: 1rem;
+}
+@media (max-width: 768px) {
+  .heroSection {
+      flex-direction: column;
+  }
+  .infoContainer {
+      width: 100%;
+      text-align: center;
+  }
+  .userImage {
+      width: 200px; /* Adjust image size */
+  }
+  .projectCard {
+      width: 100%;
+  }
+  /* ... other media query styles */
 }
